@@ -13,9 +13,11 @@ return {
     "MunifTanjim/nui.nvim",
   },
   opts = {
-    close_if_last_window = true
+    close_if_last_window = true,
+    window = {
+      mappings = {
+        ["<C-x>"] = "close_window"
+      }
+    }
   },
---  config = function ()
---    require('neo-tree').setup {}
---  end,
 }
